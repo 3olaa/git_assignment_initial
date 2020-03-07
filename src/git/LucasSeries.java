@@ -1,10 +1,14 @@
+
+package git;
+
 public class LucasSeries implements ISubscriber {
     public static int lucas_series(int number) { 
         if (number == 0) 
             return 2; 
         if (number == 1) 
             return 1; 
-        return lucas_series(number - 1) + lucas_series(number - 2); 
+        return lucas_series(number - 1) +  
+               lucas_series(number - 2); 
     } 
 
     @Override

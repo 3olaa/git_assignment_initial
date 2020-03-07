@@ -1,6 +1,14 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package git;
+
 import java.util.Scanner;
 
 public class Main {
+
     private static ISubscriber subscribers [] = {
             new SimpleSubscriber(),
             new ReallySimpleSubscriber(),
@@ -10,9 +18,7 @@ public class Main {
             new Spherearea(),
             new SphereVolume(),
             new CircleCircumference(),
-            new multiplicationSeries()
-	
-
+            new multiplicationSeries(),
     };
     public static void main(String[] args) {
         Topic mathTopic = new Topic();
@@ -23,6 +29,5 @@ public class Main {
         String input = sc.next();
         mathTopic.dispatchEvent(input);
     }
-
 
 }
